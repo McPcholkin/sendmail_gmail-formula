@@ -1,6 +1,6 @@
 ======================
 sendmail_gmail-formula
-=====================
+======================
 
 Simple formula to configure sendmail use gmail.
 
