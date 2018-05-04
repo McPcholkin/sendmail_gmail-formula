@@ -1,0 +1,66 @@
+{% set sendmail = salt['grains.filter_by']({
+    'Debian': {
+      'pkg': 'sendmail',
+      'service': 'sendmail',
+      'config_dir': '/etc/mail',
+      'auth_dir': '/etc/mail/auth',
+      'user': 'root',
+      'config': 'sendmail.mc',
+      'authinfo': 'authinfo'
+      },
+    'Arch': {
+      'pkg': '',
+      'service': '',
+      'config_dir': '',
+      'auth_dir': '',
+      'user': '',
+      'config': '',
+      'authinfo': ''
+      },
+    'OpenBSD': {
+      'pkg': '',
+      'service': '',
+      'config_dir': '',
+      'auth_dir': '',
+      'user': '',
+      'config': '',
+      'authinfo': ''
+      },
+    'RedHat': {
+      'pkg': '',
+      'service': '',
+      'config_dir': '',
+      'auth_dir': '',
+      'user': '',
+      'config': '',
+      'authinfo': ''
+      },
+    'Suse': {
+      'pkg': '',
+      'service': '',
+      'config_dir': '',
+      'auth_dir': '',
+      'user': '',
+      'config': '',
+      'authinfo': ''
+      },
+    'FreeBSD': {
+      'pkg': '',
+      'service': '',
+      'config_dir': '',
+      'auth_dir': '',
+      'user': '',
+      'config': '',
+      'authinfo': ''
+      },
+    'Gentoo': {
+      'pkg': '',
+      'service': '',
+      'config_dir': '',
+      'auth_dir': '',
+      'user': '',
+      'config': '',
+      'authinfo': ''
+      },
+}, merge=salt['pillar.get']('sendmail')) %}
+  

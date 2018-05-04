@@ -1,4 +1,5 @@
 sendmail:
   account:
-    email: example.gmail.com
-    password: "Pa$$WorD"
+    force: False # to force change email
+    email: 'example@gmail.com'
+    password: 'Pa$$WorD'
