@@ -1,0 +1,4 @@
+sendmail:
+  account:
+    email: example.gmail.com
+    password: "Pa$$WorD"
